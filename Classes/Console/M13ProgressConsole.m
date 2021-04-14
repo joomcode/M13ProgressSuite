@@ -100,7 +100,7 @@
         if (image != nil) {
             //Apply the filters to blur the image
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-                image = [image applyLightEffect];
+                image = [image m13_applyLightEffect];
                 dispatch_async(dispatch_get_main_queue(), ^{
                     // Fade on content's change, if there was already an image.
                     CATransition *transition = [CATransition new];
